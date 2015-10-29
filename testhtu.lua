@@ -15,8 +15,8 @@ tmr.alarm(6, 5000, 1, function ()
     else
       print("Init failed!")
     end
-    package.loaded["htu21d"] = nil
     htu = nil
+    package.loaded["htu21d"] = nil
   else
     print("Package failed to load!")
   end
